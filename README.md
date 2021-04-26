@@ -1,6 +1,6 @@
 # Player List Indicators
-# Made by CrimZon 04/25/2021
-# Based on Player Indicators plugin
+Made by CrimZon 04/25/2021
+Based on Player Indicators plugin
 
 
 Allows player names to be put into lists and have each list a different colour. Based on Player Indicators.
