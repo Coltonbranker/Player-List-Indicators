@@ -25,7 +25,7 @@ public interface PlayerListIndicatorsConfig extends Config
 	)
 	default boolean highlightListOne()
 	{
-		return false;
+		return true;
 	}
 
 	@ConfigItem(
@@ -49,7 +49,7 @@ public interface PlayerListIndicatorsConfig extends Config
 	)
 	default boolean highlightListTwo()
 	{
-		return false;
+		return true;
 	}
 
 	@ConfigItem(
@@ -157,22 +157,13 @@ public interface PlayerListIndicatorsConfig extends Config
 	}
 
 
-	@ConfigItem(
-			position = 12,
-			keyName = "clanMenuIcons",
-			name = "Show friends chat ranks",
-			description = "Add friends chat rank to right click menu and next to player names"
-	)
-	default boolean showFriendsChatRanks()
-	{
-		return false;
-	}
+
 
 	@ConfigSection(
 			name = "Item Lists",
 			description = "The player name lists",
 			position = 100,
-			closedByDefault = true
+			closedByDefault = false
 	)
 	String itemLists = "itemLists";
 

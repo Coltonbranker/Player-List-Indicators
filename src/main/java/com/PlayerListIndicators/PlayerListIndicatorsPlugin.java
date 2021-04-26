@@ -214,10 +214,7 @@ public class PlayerListIndicatorsPlugin extends Plugin
 			newTarget = ColorUtil.prependColorTag(newTarget, decorations.getColor());
 		}
 
-		if (decorations.getImage() != -1 && config.showFriendsChatRanks())
-		{
-			newTarget = "<img=" + decorations.getImage() + ">" + newTarget;
-		}
+
 
 		return newTarget;
 	}

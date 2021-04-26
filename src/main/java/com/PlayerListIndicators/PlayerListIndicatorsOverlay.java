@@ -83,40 +83,7 @@ public class PlayerListIndicatorsOverlay extends Overlay
             return;
         }
 
-        if (config.showFriendsChatRanks() && actor.isFriendsChatMember())
-        {
-            final FriendsChatRank rank = friendChatManager.getRank(name);
 
-            if (rank != FriendsChatRank.UNRANKED)
-            {
-                final BufferedImage rankImage = friendChatManager.getRankImage(rank);
-
-                if (rankImage != null)
-                {
-                    final int imageWidth = rankImage.getWidth();
-                    final int imageTextMargin;
-                    final int imageNegativeMargin;
-
-                    if (drawPlayerNamesConfig == PlayerNameLocation.MODEL_RIGHT)
-                    {
-                        imageTextMargin = imageWidth;
-                        imageNegativeMargin = 0;
-                    }
-                    else
-                    {
-                        imageTextMargin = imageWidth / 2;
-                        imageNegativeMargin = imageWidth / 2;
-                    }
-
-                    final int textHeight = graphics.getFontMetrics().getHeight() - graphics.getFontMetrics().getMaxDescent();
-                    final Point imageLocation = new Point(textLocation.getX() - imageNegativeMargin - 1, textLocation.getY() - textHeight / 2 - rankImage.getHeight() / 2);
-                    OverlayUtil.renderImageLocation(graphics, imageLocation, rankImage);
-
-                    // move text
-                    textLocation = new Point(textLocation.getX() + imageTextMargin, textLocation.getY());
-                }
-            }
-        }
 
         OverlayUtil.renderTextLocation(graphics, textLocation, name, color);
     }
