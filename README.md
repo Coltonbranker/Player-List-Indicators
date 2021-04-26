@@ -5,8 +5,6 @@ Based on Player Indicators plugin.
 
 Allows player names to be put into lists and have each list a different colour.
 
-Based on Player Indicators.
-
 Same options as Player Indicators: 
   * Draw tiles under players  
   * Name position  
