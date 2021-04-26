@@ -3,7 +3,9 @@ Made by CrimZon 04/25/2021.
 Based on Player Indicators plugin.
 
 
-Allows player names to be put into lists and have each list a different colour. Based on Player Indicators.
+Allows player names to be put into lists and have each list a different colour.
+
+Based on Player Indicators.
 
 Same options as Player Indicators: 
   * Draw tiles under players  
@@ -17,6 +19,10 @@ User will be able to make four lists of players to enter the names into.
 Option to highlight each of the four lists and choose colours for each of them
 
 
+
+
+
+### Copyright from Player Indicators
 /*
  * Copyright (c) 2018, Tomas Slusny <slusnucky@gmail.com>
  * All rights reserved.
